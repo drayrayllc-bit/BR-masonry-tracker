@@ -92,21 +92,7 @@ export default function BatonRougeMasonryTrackerApp() {
   const [date, setDate] = useState(today());
   const [crewSize, setCrewSize] = useState(3);
   const [foreman, setForeman] = useState("");
-  const [lines, setLines] = useState([
-    blankLine(3),
-    {
-      id: crypto.randomUUID(),
-      task: "Remove brick backup",
-      location: "C24",
-      crewSize: 6,
-      hours: 3,
-      quantity: 125,
-      stoneNumbers: "",
-      notes: "East elevation",
-      elevation: "",
-      stonePickerOpen: false
-    }
-  ]);
+  const [lines, setLines] = useState([blankLine(3)]);
   const [submitted, setSubmitted] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
   const [submitError, setSubmitError] = useState("");
